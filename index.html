@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaka Braddah Medical</title>
+    <meta name="description" content="Locally owned and operated business that teaches CPR and sells first aid equipment.">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-    
+   <header>
+        <a href="index.html"><img id="logoImage" src="img/SampleLogo.jpeg.png" alt="Shaka Braddah Medical Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="CPR.html">CPR Training</a></li>
+                <li><a href="FirstAid.html">First Aid Equipment</a></li>
+            </ul>
+        </nav>
+   </header>
+   <main>
+        <section id="banner">
+            <h1>Shaka Braddah Medical</h1>
+            <h3>*** Sample Slogans: "Prepared to Save. Equipped to Protect" OR "Training for Life. Equipment for Every Emergency" Or
+                "Empowering People. Equipping Heroes" ***
+            </h3>
+            <h4>Professional CPR training, lifesaving education, and quality first aid equipment to help you be ready when it matters most.</h4>
+        </section>
+        <section id="about">
+            <h2>About Shaka Braddah Medical</h2>
+            <p id="about1">At Shaka Braddah Medical, our mission is simple: to help people feel prepared, confident, and equipped when it matters most. Founded 
+                on real-world experience in fire and emergency medical services, we understand that emergencies don't always happen when or where you 
+                expect them. That's why we're passionate about bringing lifesaving education and dependable medical equipment to the people who need them.</p>
+            <p id="about2">Through hands-on CPR training, practical emergency preparedness education, and access to professional-grade first aid and medical supplies, 
+                we strive to give individuals, families, businesses, and organizations the tools they need to respond with confidence.</p>
+            <p id="about3">We believe that being prepared can make a difference, that knowledge is one of the most valuable tools you can have, and that everyone 
+                deserves the opportunity to learn skills that can save lives.</p>
+            <p id="about4"><b>Shaka Braddah Medical — Prepared to Save. Equipped to Protect.</b></p>
+            <img id="aboutPhoto" src="img/first-aid-training.jpg" alt="Firefighters learning first aid">
+        </section>
+        <section class="info">
+            <h2>CPR Training</h2>
+            <h4>You Don't Have to Be a First Responder to Save a Life.</h4>
+            <p>Emergencies can happen anywhere, and knowing what to do can make all the difference. At Shaka Braddah Medical, we're passionate 
+                about empowering everyday people with the knowledge, skills, and confidence to respond when it matters most. With real-world 
+                experience as a firefighter and paramedic, our CPR training focuses on practical, hands-on learning that prepares you to take 
+                action when someone needs help. Whether you're a parent, teacher, coach, business owner, or simply someone who wants to be prepared, 
+                we're here to help you gain the skills that could one day save a life. Because lifesaving knowledge shouldn't be limited to first 
+                responders.</p>
+            <img class="webPhotos" src="img/cprImage.jpg" alt="One wood dummy doing CPR to another wood dummy">
+            <a class="landingPageLink" href="CPR.html">Schedule Today</a>
+        </section>
+        <section class="info">
+            <h2>Professional First Aid Equipment</h2>
+            <h4>Your Business Deserves to Be Prepared.</h4>
+            <p>When an emergency happens, having the right equipment readily available can make all the difference. At Shaka Braddah Medical, we 
+                believe every workplace deserves access to dependable, professional-grade first aid and emergency medical supplies. Drawing on 
+                real-world experience in fire and emergency medical services, we understand the importance of being properly equipped and prepared 
+                to respond when unexpected situations arise. Whether you're outfitting a small business, managing a large workplace, or looking to 
+                upgrade your existing first aid supplies, we're here to help you find quality equipment to meet your needs. Our goal is to help 
+                businesses create safer, better-prepared environments by providing the tools and resources needed when every second counts.</p>
+            <img class="webPhotos" src="img/defibrillator.jpg" alt="defibrillator">
+            <a class="landingPageLink" href="FirstAid.html">Get More Information</a>
+            </section>
+   </main>
+   <footer>
+        <p>&#169; <span id="currentYear"></span> Shaka Bruddah Medical | All Rights Reserved | Locally Owned & Operated</p>
+   </footer>
+   <script>
+        const d = new Date();
+        const year = d.getFullYear();
+        // Current year for copyright
+        document.getElementById("currentYear").textContent = year;
+</script>
 </body>
 </html>
