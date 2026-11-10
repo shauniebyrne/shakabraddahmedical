@@ -1,0 +1,40 @@
+:root {
+    --blue: #0D1E29;
+    --gold: #D4AF37;
+    --titlesFont: "Times New Roman", Times, Georgia, serif;
+    --bodyFont: Arial, Helvetica, sans-serif;
+    --margin: 20px;
+    --padding: 25px;
+    --fontpadding: 15px;
+    --fontmargin: 10px;
+}
+
+form {
+    color: var(--blue);
+}
+
+#formInfo {
+    text-align: center
+}
+
+label, input {
+    display: block;
+    color: var(--blue);
+}
+
+input, select, textarea {
+    padding: var(--fontmargin);
+    border-color: var(--gold);
+}
+
+@media (min-width: 768px) {
+    form {
+        margin: var(--margin) auto var(--margin) auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--fontmargin);
+        width: 65%;
+    }
+}

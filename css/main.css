@@ -3,34 +3,10 @@
     --gold: #D4AF37;
     --margin: 20px;
     --padding: 20px;
-
 }
 
-#banner {
-    color: var(--gold);
-    background-color: var(--blue);
-    padding: var(--padding);
-    text-align: center;
-}
-
-.landingPageLink {
-    display: block;
-    margin: var(--margin);
-    text-decoration: none;
-    padding: var(--padding);
-    background-color: var(--blue);
-    color: var(--gold);
-    border-radius: 4px;
-    width: 100%;
-    max-width: 170px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.info {
-    border: var(--gold) solid 2px;
-    border-radius: 4px;
-    box-shadow: 2px 4px 10px var(--blue) ;
+.info, #about {
+    color: var(--blue);
 }
 
 @media (min-width: 768px) {

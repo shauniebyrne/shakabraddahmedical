@@ -35,10 +35,6 @@ h4 {
     font-size: 1.25em;
 }
 
-body {
-    font-family: var(--bodyFont);
-}
-
 #logoImage {
     width: 100px;
     height: 100px;
@@ -46,14 +42,16 @@ body {
 
 a {
     cursor: pointer;
+    font-family: var(--bodyFont);
 }
 
 p {
     margin: var(--fontmargin);
+    font-family: var(--bodyFont);
 }
 
 img {
-    width: 400px;
+    width: 80%;
     padding: var(--padding);
 }
 
@@ -87,6 +85,33 @@ nav ul li a:hover {
     background-color: var(--blue);
     text-decoration: underline;
     text-decoration-thickness: 2px;
+}
+
+.banner {
+    color: var(--gold);
+    background-color: var(--blue);
+    padding: var(--padding);
+    text-align: center;
+}
+
+.info {
+    border: var(--gold) solid 2px;
+    border-radius: 4px;
+    box-shadow: 2px 4px 10px var(--blue) ;
+}
+
+.landingPageLink {
+    display: block;
+    margin: var(--margin);
+    text-decoration: none;
+    padding: var(--padding);
+    background-color: var(--blue);
+    color: var(--gold);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 170px;
+    text-align: center;
+    font-weight: bold;
 }
 
 footer {

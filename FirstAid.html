@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Aid Equipment | Shaka Braddah Medical</title>
-    <meta name="description" content="View and buy professional first aid equipment.">
+    <title>Business First Aid Equipment | Shaka Braddah Medical</title>
+    <meta name="description" content="Looking for professional first aid equipment for your business? Shaka Braddah 
+    Medical provides quality workplace first aid supplies and emergency preparedness solutions. Contact us today to 
+    discuss your business needs!">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/firstAid.css">
@@ -21,7 +23,67 @@
         </nav>
    </header>
    <main>
-        
+        <section class="banner">
+            <h1>Let's Get Your Business Prepared!</h1>
+            <h3>Every workplace has different needs when it comes to first aid and emergency preparedness. Tell us a little 
+            about your business, and we'll be happy to help you find the right equipment.</h3>
+        </section>
+        <form class="info" action="https://formsubmit.co/brandt@shakabraddahmed.com" method="POST">
+            <div id="formInfo">
+                <h2>First Aid Equipment Inquiry</h2>
+                <h4>Tell us about your business and first aid equipment needs. We will be in touch!</h4>
+                <p>We respect your privacy. The information you provide will be used exclusively to address your inquiry and will not be stored or shared for unrelated purposes.</p>
+                <p>* Indicates a required field</p>
+            </div>
+            <!-- Email settings -->
+            <input type="hidden" name="_subject" value="New First Aid Equipment Inquiry - Shaka Braddah Medical">
+            <input type="hidden" name="_template" value="table">
+
+            <!-- Customer Information -->
+            <label for="contactName">Contact Name *</label>
+            <input type="text" id="contactName" name="Contact Name" required>
+
+            <label for="businessName">Business Name *</label>
+            <input type="text" id="businessName" name="Business Name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="phoneNumber">Phone Number *</label>
+            <input type="tel" id="phoneNumber" name="Phone Number" required>
+
+            <label>Type of Business</label>
+            <select name="Business Type">
+                <option value="">Select Business Type</option>
+                <option>Office</option>
+                <option>Construction</option>
+                <option>Manufacturing</option>
+                <option>Restaurant</option>
+                <option>Retail</option>
+                <option>School / Education</option>
+                <option>Other</option>
+            </select>
+
+            <label>Number of Employees</label>
+            <select name="Number of Employees">
+                <option value="">Select Number</option>
+                <option>1-10</option>
+                <option>11-25</option>
+                <option>26-50</option>
+                <option>51-100</option>
+                <option>100+</option>
+            </select>
+
+            <label for="equipment">What Equipment Are You Interested In? *</label>
+            <textarea name="Equipment Needs" id="equipment" rows="4"
+                placeholder="Tell us what first aid supplies or equipment you are looking for..." required></textarea>
+
+            <label for="comments">Additional Comments or Questions</label>
+            <textarea name="Additional Comments" id="comments" rows="4"></textarea>
+
+            <!-- Submit Button -->
+            <button class="landingPageLink" type="submit">Submit Inquiry</button>
+    </form>
    </main>
    <footer>
         <p>&#169; <span id="currentYear"></span> Shaka Bruddah Medical | All Rights Reserved | Locally Owned & Operated</p>
