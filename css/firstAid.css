@@ -11,6 +11,12 @@
 
 form {
     color: var(--blue);
+    margin: var(--margin) auto var(--margin) auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--fontmargin);
 }
 
 #formInfo {
@@ -29,12 +35,6 @@ input, select, textarea {
 
 @media (min-width: 768px) {
     form {
-        margin: var(--margin) auto var(--margin) auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: var(--fontmargin);
         width: 65%;
     }
 }
