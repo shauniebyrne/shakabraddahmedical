@@ -22,16 +22,144 @@
         </nav>
    </header>
    <main>
-        
+        <section class="banner">
+            <h1>Ready to Learn CPR?</h1>
+            <h4>Whether you're looking to learn lifesaving skills for yourself, your family, 
+                or your workplace, Shaka Braddah Medical is here to help. Complete the form below 
+                and let us know your training preferences. We will reach out to discuss 
+                available classes, scheduling, and registration details.</h3>
+        </section>
+       <form class="info" action="https://formsubmit.co/brandt@shakabraddahmed.com" method="POST">
+            <div class="formInfo">
+                <h2>CPR Training Inquiry</h2>
+                <h4>Complete the form below to tell us about your CPR training needs and preferred schedule. We will be in touch!</h4>
+                <p>* Indicates a required field</p>
+            </div>
+            <!-- Email Settings -->
+            <input type="hidden" name="_subject" value="New CPR Training Inquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://shauniebyrne.github.io/shakabraddahmedical/thanksCPR.html">
+            <input type="hidden" name="_autoresponse" value="Hello,
+
+Thank you for your interest in CPR training with Shaka Braddah Medical!
+
+We're excited that you're taking the initiative to learn valuable lifesaving skills. Whether you're learning for yourself, your family, or your workplace, gaining the knowledge and confidence to respond in an emergency can make a tremendous difference.
+
+Your CPR training inquiry has been successfully received. We will review your information and reach out to discuss your training preferences, available class times, and next steps for registration.
+
+Please note that submitting this inquiry does not reserve or confirm a training spot. Your class details will be finalized directly.
+
+Thank you for choosing Shaka Braddah Medical. We look forward to helping you become better prepared to make a difference when it matters most!
+
+Shaka Braddah Medical - Prepare a braddah. Save a braddah.">
+            <div class="formSection">
+                <!-- Personal Information -->
+                <h3>Your Information</h3>
+
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="Full Name" required>
+
+                <label for="custEmail">Email Address *</label>
+                <input type="email" id="custEmail" name="Email Address" required>
+
+                <label for="phoneNum">Phone Number *</label>
+                <input type="tel" id="phoneNum" name="Phone Number" required>
+
+                <label for="registrationType">Are you registering as:</label>
+                <select id="registrationType" name="Registration Type">
+                    <option value="">Please Select</option>
+                    <option>Individual</option>
+                    <option>Business / Organization</option>
+                    <option>Group / Family</option>
+                </select>
+
+                <label for="busName">Business or Organization Name (if applicable)</label>
+                <input type="text" id="busName" name="Business Name">
+            </div>
+            <div class="formSection">
+                <!-- Training Information -->
+                <h3>CPR Training Information</h3>
+
+                <label for="trainingType">What type of CPR training are you interested in? *</label>
+                <select id="trainingType" name="Training Type" required>
+                    <option value="">Please Select</option>
+                    <option>Adult CPR</option>
+                    <option>Adult, Child & Infant CPR</option>
+                    <option>CPR & AED Training</option>
+                    <option>Basic Life Support (BLS)</option>
+                    <option>Workplace CPR Training</option>
+                    <option>Not Sure - I Need More Information</option>
+                </select>
+
+                <label for="numOfPeople">How many people are interested in training? *</label>
+                <select id="numOfPeople" name="Number of Participants" required>
+                    <option value="">Please Select</option>
+                    <option>1 Person</option>
+                    <option>2-5 People</option>
+                    <option>6-10 People</option>
+                    <option>11-20 People</option>
+                    <option>More than 20 People</option>
+                </select>
+            </div>
+            <div class="formSection">
+                <!-- Availability -->
+                <h3>Your Availability</h3>
+
+                <label for="preTrainingDay">Preferred Training Day *</label>
+                <select id="preTrainingDay" name="Preferred Day" required>
+                    <option value="">Please Select</option>
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                    <option>Flexible / Any Day</option>
+                </select>
+
+                <label for="preTrainingTime">Preferred Training Time *</label>
+                <select id="preTrainingTime" name="Preferred Time" required>
+                    <option value="">Please Select</option>
+                    <option>Morning (8 AM - 12 PM)</option>
+                    <option>Afternoon (12 PM - 5 PM)</option>
+                    <option>Evening (5 PM - 8 PM)</option>
+                    <option>Flexible / Any Time</option>
+                </select>
+
+                <label for="preStartDate">Preferred Start Date</label>
+                <input type="date" id="preStartDate" name="Preferred Start Date">
+
+                <label for="location">Would you prefer training at your location?</label>
+                <select id="location" name="Training Location Preference">
+                    <option value="">Please Select</option>
+                    <option>Yes, at my home or business</option>
+                    <option>No, I can travel to a training location</option>
+                    <option>Either option works</option>
+                </select>
+            </div>
+            <div class="formSection">
+                <!-- Additional Information -->
+                <h3>Additional Information</h3>
+
+                <label for="addComments">Questions or Additional Comments</label>
+                <textarea id="addComments" name="Additional Comments" rows="4"
+                    placeholder="Tell us about any special requests or questions..."></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button class="landingPageLink" type="submit">Request CPR Training</button>
+            <p class="specialNote"><u>Please note:</u> Submitting this form is an inquiry and does not guarantee or reserve a 
+                    training spot. Your CPR training will be confirmed directly with us.</p>
+        </form>
    </main>
    <footer>
         <p>&#169; <span id="currentYear"></span> Shaka Bruddah Medical | All Rights Reserved | Locally Owned & Operated</p>
    </footer>
    <script>
-    const d = new Date();
-    const year = d.getFullYear();
-    // Current year for copyright
-    document.getElementById("currentYear").textContent = year;
-</script>
+        const d = new Date();
+        const year = d.getFullYear();
+        // Current year for copyright
+        document.getElementById("currentYear").textContent = year;
+    </script>
 </body>
 </html>
